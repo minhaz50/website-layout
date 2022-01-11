@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlBum</title>
+    <style>
+        .photo-album {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .photo-frame {
+            width: 400px;
+            height: 250px;
+            /* border: 2px solid rebeccapurple; */
+            border-radius: 10px;
+            position: relative;
+            margin: 10px;
+            overflow: hidden;
+
+        }
+
+        .photo img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .photo-detail {
+            position: absolute;
+            width: 300px;
+            top: 0;
+            display: none;
+            padding: 10px;
+        }
+
+        .photo-detail h2 {
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+        }
+
+        .photo-frame:hover .photo-detail {
+            display: block;
+            background-color: rgba(108, 150, 160, 0.411);
+            color: white;
+            font-weight: 500px;
+        }
+
+        .photo-frame:hover .photo {
+            transform: scale(1.5);
+            transition: transform 2s ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>My awesome photo album.</h1>
+    <section>
+        <h3>Tiger album</h3>
+        <div class="photo-album">
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="./images/tiger2.jpg" alt="">
+                </div>
+                <div class="photo-detail">
+                    <h2>Tiger candid</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit provident dolore eos deleniti
+                        quisquam perspiciatis labore, enim possimus consectetur qui in unde accusantium esse officia
+                        nemo reiciendis.</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="./images/photo-1453728013993-6d66e9c9123a.jpg" alt="">
+                </div>
+                <div class="photo-detail">
+                    <h2>Tiger candid</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit provident dolore eos deleniti
+                        quisquam perspiciatis labore, enim possimus consectetur qui in unde accusantium esse officia
+                        nemo reiciendis.</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="./images/istockphoto-1180542165-612x612.jpg" alt="">
+                </div>
+                <div class="photo-detail">
+                    <h2>Tiger candid</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit provident dolore eos deleniti
+                        quisquam perspiciatis labore, enim possimus consectetur qui in unde accusantium esse officia
+                        nemo reiciendis.</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="./images/istockphoto-1140180560-612x612.jpg" alt="">
+                </div>
+                <div class="photo-detail">
+                    <h2>Tiger candid</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit provident dolore eos deleniti
+                        quisquam perspiciatis labore, enim possimus consectetur qui in unde accusantium esse officia
+                        nemo reiciendis.</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="./images/img_lights.jpg" alt="">
+                </div>
+                <div class="photo-detail">
+                    <h2>Tiger candid</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit provident dolore eos deleniti
+                        quisquam perspiciatis labore, enim possimus consectetur qui in unde accusantium esse officia
+                        nemo reiciendis.</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="./images/images.jpg" alt="">
+                </div>
+                <div class="photo-detail">
+                    <h2>Tiger candid</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit provident dolore eos deleniti
+                        quisquam perspiciatis labore, enim possimus consectetur qui in unde accusantium esse officia
+                        nemo reiciendis.</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="./images/food-healthy.jpg" alt="">
+                </div>
+                <div class="photo-detail">
+                    <h2>Tiger candid</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit provident dolore eos deleniti
+                        quisquam perspiciatis labore, enim possimus consectetur qui in unde accusantium esse officia
+                        nemo reiciendis.</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="./images/640px-Image_created_with_a_mobile_phone.png" alt="">
+                </div>
+                <div class="photo-detail">
+                    <h2>Tiger candid</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit provident dolore eos deleniti
+                        quisquam perspiciatis labore, enim possimus consectetur qui in unde accusantium esse officia
+                        nemo reiciendis.</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="./images/photo-1453728013993-6d66e9c9123a.jpg" alt="">
+                </div>
+                <div class="photo-detail">
+                    <h2>Tiger candid</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit provident dolore eos deleniti
+                        quisquam perspiciatis labore, enim possimus consectetur qui in unde accusantium esse officia
+                        nemo reiciendis.</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="./images/istockphoto-1180542165-612x612.jpg" alt="">
+                </div>
+                <div class="photo-detail">
+                    <h2>Tiger candid</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit provident dolore eos deleniti
+                        quisquam perspiciatis labore, enim possimus consectetur qui in unde accusantium esse officia
+                        nemo reiciendis.</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="./images/istockphoto-1140180560-612x612.jpg" alt="">
+                </div>
+                <div class="photo-detail">
+                    <h2>Tiger candid</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit provident dolore eos deleniti
+                        quisquam perspiciatis labore, enim possimus consectetur qui in unde accusantium esse officia
+                        nemo reiciendis.</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="./images/img_lights.jpg" alt="">
+                </div>
+                <div class="photo-detail">
+                    <h2>Tiger candid</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit provident dolore eos deleniti
+                        quisquam perspiciatis labore, enim possimus consectetur qui in unde accusantium esse officia
+                        nemo reiciendis.</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="./images/tiger2.jpg" alt="">
+                </div>
+                <div class="photo-detail">
+                    <h2>Tiger candid</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit provident dolore eos deleniti
+                        quisquam perspiciatis labore, enim possimus consectetur qui in unde accusantium esse officia
+                        nemo reiciendis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
